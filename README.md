@@ -34,4 +34,4 @@ You can support Lesedi Organisation in several ways:
 
 
 ---
-✨ *Together, we can make sure every girl has the dignity and opportunit
+✨ *“Lesedi Charity Organisation – Lighting the way for every girl’s future.”*
