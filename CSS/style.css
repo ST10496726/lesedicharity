@@ -11,10 +11,10 @@ body{
     margin: 20px;
 }
 .active {
-    color: blue;
+    color: rgb(183, 20, 115);
 }
 .main_heading {
-    color: deeppink;
+    color: rgb(214, 34, 130);
     margin-bottom: 10px;
 }
 .sub_heading {
