@@ -9,6 +9,7 @@ body{
     font-size: medium;
     line-height: 1.6;
     margin: 20px;
+    letter-spacing: 0.5px;
 }
 .active {
     color: rgb(183, 20, 115);
