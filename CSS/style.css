@@ -10,3 +10,16 @@ body{
     line-height: 1.6;
     margin: 20px;
 }
+.active {
+    color: blue;
+}
+.main_heading {
+    color: deeppink;
+    margin-bottom: 10px;
+}
+.sub_heading {
+
+}
+.paragraph {
+
+}
