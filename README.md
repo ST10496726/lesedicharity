@@ -38,7 +38,7 @@ You can support Lesedi Organisation in several ways:
 
 
 ### Wire Frames
-![Wireframe] (img/wireframeaboutus.png)
+![Wireframe] (img/wireframeaboutus.jpg)
 
 
 ---
