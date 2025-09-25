@@ -1,29 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lesedi Charity | Contact Us</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!--Navigation-->
-      <a href="index.html">Home</a>
+        <nav class="navbar">
+        <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="project.html">Projects</a>
         <a href="involved.html">Get involved</a>
-        <a href="contact.html">Contact Us</a>  
-        <!--Content Page-->
+        <a href="contact.html" class="active">Contact Us</a> 
+        </nav>
+        <!--Page Content-->
+        <main class="container">
     <h1>Contact Us</h1>
     <p>We’d love to hear from you! Whether you want to partner with us, volunteer, donate, or simply learn <br>
          more about our work, feel free to reach out.</p>
-    <img src="img/Phone.jpg" width="400" height="300">
-    <h2>Our Office</h2>
-    <p>1 Alpha Street Potchindustria, Potchefstroom</p>
-    <h2>Our number</h2>
-    <p> 018 055 3896</p>
-    <h2> Email Us</h2>
-    <p>info@lesediorg.org</p>
-    <img src="img/blood.jpg" width="400" height="200">
+    <div class="contact-grid">
+        <div class="contact-info">
+            <h2>Our Office</h2>
+            <p>1 Alpha Street Potchindustria, Potchefstroom</p>
+
+            <h2>Our number</h2>
+            <p> 018 055 3896</p>
+
+            <h2> Email Us</h2>
+            <p>info@lesediorg.org</p>
+        </div>
+
+    <div class="contact-images">
+        <picture>
+            <source srcset="img/phone-smalll.jpg" media="(max-width:600px)">
+            <source srcset="img/phone-medium.jpg" media="(max-width:1024px)">
+            <img src="img/Phone.jpg" width="400" height="300">
+        </picture>
+        <picture>
+            <source srcset="img/blood-small.jpg" media="(max-width: 600px)">
+            <source srcset="img/blood-medium.jpg" media="(max-width: 1024px)">
+            <img src="img/blood.jpg" width="400" height="200">
+        </picture>
+    </div>
+</div>
     <br>
-    <p> “Lesedi Charity Organisation – Lighting the way for every girl’s future.”</p>
-    </body>
+    <p class="tagline">
+         “Lesedi Charity Organisation – Lighting the way for every girl’s future.”</p>
+    </main>
+</body>
 </html>
