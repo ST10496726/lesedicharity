@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lesedi Charity | Get involved</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!--Navigation-->
-      <a href="index.html">Home</a>
+        <nav class="navbar">
+        <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="project.html">Projects</a>
-        <a href="involved.html">Get involved</a>
-        <a href="contact.html">Contact Us</a>  
-    <!--Content Page-->
+        <a href="involved.html" class="active">Get involved</a>
+        <a href="contact.html">Contact Us</a> 
+        </nav> 
+    <!--Page Content-->
+    <main class="container">
     <h1>Get Involved with Lesedi Organisation</h1>
+<section class="donations">
     <p1>Your contribution helps us provide sanitary pads, run educational workshops, and expand our reach to more schools. Every donation, <br>
         big or small, makes a real difference in a girl’s life.</p1>
     <ul>
@@ -20,7 +26,13 @@
         <li>Monthly giving options</li>
         <li>Sponsorship opportunities</li>
     </ul>
-    <img src="img/Helping.jpg" width="400" height="200">
+    <picture>
+        <source srcset="img/heling-small.jpg" media="(max-width: 600px)">
+        <source srcset="img/helping-medium.jpg" media="(max-width: 1024px)">
+        <img src="img/Helping.jpg" width="400" height="200">
+    </picture>
+ </section>
+ <section class="volunteer">
     <h2>Volunteer</h2>
     <h3>Join us in making an impact! Volunteers help with:</h3>
     <ol>
@@ -29,13 +41,19 @@
         <li>Fundraising events and drives</li>
         <li>Administrative and creative support (design, social media, writing, etc.)</li>
     </ol>
+</section>
+<section class="partner">
     <h4>Partner With Us</h4>
     <p>We welcome partnerships with schools, businesses, NGOs, and community groups who share our vision. Together, we can create sustainable <br>
          solutions to end period poverty.</p>
+</section>
+<section class="Fundraise">
     <h5>Fundraise for Us</h5>
     <ul>
         <li>Run donation drives for pads and hygiene products</li>
         <li>Celebrate birthdays or milestones by raising funds for Lesedi</li>
     </ul>
-    </body>
+</section>
+</main>
+</body>
 </html>
