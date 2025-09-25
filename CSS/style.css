@@ -87,6 +87,9 @@ body {
 ========================== */
 .donations {
     margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 .donations ul {
     list-style-type: disc;
@@ -104,6 +107,7 @@ body {
 }
 .volunteer h2 {
     color: var(--secondary-color);
+    margin-bottom: 1rem;
 }
 .volunteer ol {
     padding-left: 1.5rem;
@@ -112,6 +116,7 @@ body {
 .partner h2,
 .fundraise h2 {
     color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 /* ==========================
