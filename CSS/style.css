@@ -92,3 +92,31 @@ nav ul{
 nav ul li a{
     font-weight: 500;
 }
+/* Herp Section Grid */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+    background-color: #f0f4f8;
+}
+.hero img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0,0,0, 0.1);
+}
+/* Footer - flexbox */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #222222;
+    color: #ffffff;
+}
+footer a{
+    color: #ffffff;
+}
+footer a:hover, footer a:focus, footer a:active {
+    color: #0066cc;
+}
