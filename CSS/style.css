@@ -1,17 +1,30 @@
-/* Reset default browser styles */
+/* ==========================
+   Base + Global Styles
+========================== */
+:root {
+    --primary-color: brown;
+    --secondary-color: darkgreen;
+    --dark-color: #333;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: brown;
+    color: var(--primary-color);
     letter-spacing: 0.5px;
 }
-/* Hero Section */
+
+/* ==========================
+   Hero Section
+========================== */
 .hero {
     display: flex;
     flex-wrap: wrap;
@@ -30,20 +43,24 @@ body{
 }
 .hero-text p {
     font-size: 1.2rem;
-    line-height: 1.6;
     margin-top: 1rem;
 }
-.hero-text img {
+.hero img {
     max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-/* Mission Section */
+
+/* ==========================
+   Mission Section
+========================== */
 .mission {
     margin: 2rem 0;
-    line-height: 1.6;
 }
-/* Services */ 
+
+/* ==========================
+   Services
+========================== */
 .services {
     margin: 2rem 0;
 }
@@ -55,10 +72,13 @@ body{
     list-style-type: disc;
     padding-left: 1.5rem;
 }
-.services li{
+.services li {
     margin-bottom: 0.5rem;
 }
-/* Closing */
+
+/* ==========================
+   Closing Section
+========================== */
 .closing {
     margin-top: 2rem;
     text-align: center;
@@ -66,19 +86,13 @@ body{
 .closing h3 {
     color: var(--primary-color);
     font-size: 1.5rem;
-    line-height: 1.4;
 }
-/* Responsive */
-@media (max-width:768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-/*Get Involved Page */
+
+/* ==========================
+   Get Involved Page
+========================== */
 .donations {
     margin: 2rem 0;
-    line-height: 1.6;
 }
 .donations ul {
     list-style-type: disc;
@@ -101,10 +115,14 @@ body{
     padding-left: 1.5rem;
     margin-top: 1rem;
 }
-.partner h2, .fundraise h2{
+.partner h2,
+.fundraise h2 {
     color: var(--primary-color);
 }
-/* Projects Page */
+
+/* ==========================
+   Projects Page
+========================== */
 .project {
     margin: 2rem 0;
     padding: 1.5rem;
@@ -117,34 +135,30 @@ body{
 }
 .project p {
     margin-bottom: 1rem;
-    line-height: 1.6;
 }
-.project ul, .project ol {
+.project ul,
+.project ol {
     padding-left: 1.5rem;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
 }
 .project li {
     margin-bottom: 0.5rem;
 }
-/* Responsive tweaks */
-@media (max-width:768px) {
-    .project{
-        padding: 1rem;
-    }
-}
-/*Contact Page */
-.contact-grid{
+
+/* ==========================
+   Contact Page
+========================== */
+.contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: start;
     margin: 2rem 0;
 }
 .contact-info h2 {
     margin-top: 1rem;
     color: var(--primary-color);
 }
-.contact-info a{
+.contact-info a {
     color: var(--secondary-color);
     text-decoration: none;
 }
@@ -161,57 +175,82 @@ body{
     text-align: center;
     font-style: italic;
     margin-top: 2rem;
-    color: var(--dar-color);
+    color: var(--dark-color);
 }
-/*Responsive */
-@media (max-width:768px) {
-    .contact-grid{
+
+/* ==========================
+   Responsive Layouts
+========================== */
+
+/* Tablets & smaller */
+@media (max-width: 991px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-grid {
         grid-template-columns: 1fr;
     }
     .contact-info {
         margin-bottom: 1.5rem;
     }
 }
-/* Mobile (<= 768px) */
-@media (max-width: 480px) and (max-width:767px) {
-    /* Styles for mobile */
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: value;
+
+/* Mobile general */
+@media (max-width: 767px) {
+    .project {
+        padding: 1rem;
     }
     .column {
-        width: 30%; /* for larger screens */
-        margin: 10px;
-        background-color: brown;
-        padding: 20px;
-        border: 1px solid burlywood;
-    }
-}
-/* Switch to single-column layout on smaller screens */
-@media (max-width:768px) {
-    .column{
-        width: 100%; /* for smaller screens */
+        width: 100%;
     }
 }
 
-/* small mobile (<=480px) */
-@media (max-width: 30em) {
+/* Small mobile */
+@media (max-width: 480px) {
     body {
         font-size: 0.85rem;
     }
-    .container { padding: 0.5rem;}
+    .container {
+        padding: 0.5rem;
+    }
     button {
         width: 100%;
         font-size: 0.9rem;
     }
 }
-/* Desktop */
-@media (min-width: 1200px) {
-    /*styles for desktop */ .content {
+
+/* ==========================
+   Larger Screens
+========================== */
+
+/* Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: value;
+        justify-content: space-between;
+    }
+    .column {
+        width: 45%;
+        margin: 5px;
+        font-size: 14px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav li {
+        margin-right: 15px;
+    }
+}
+
+/* Desktops & TVs */
+@media (min-width: 1200px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .column {
         width: 30%;
@@ -220,48 +259,9 @@ body{
     }
     nav ul {
         display: flex;
-        justify-content: value;
+        justify-content: space-evenly;
     }
     nav li {
         margin-right: 20px;
-    }
-}
-/* Laptop */
-@media (min-width: 992px) and (max-width: 1199px) {
-    /* Styles for laptop */
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: value;
-    }
-.column {
-    width: 20%;
-    margin: 5px;
-    font-size: 7px;
-}
-nav ul {
-    display: flex;
-    justify-content: value;
-}
-nav li {
-    margin-right: 15px;
-    }
-}
-/* Tablet */
-@media (min-width:768px) and (max-width: 991px) {
-    /* Styles for tablet */
-    .content {
-        display: block;
-    }
-    .column {
-        width: 100%;
-        margin: 10px 0;
-        font-size: 16px;
-    }
-    nav ul {
-        display: block;
-    }
-    nav li {
-        margin-bottom: 10px;
     }
 }
