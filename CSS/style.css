@@ -93,7 +93,7 @@ body {
 }
 .donations ul {
     list-style-type: disc;
-    padding-left: 1.5rem;
+    padding: 1.5rem;
     margin: 1rem 0;
 }
 .donations img {
@@ -101,9 +101,11 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     margin-top: 1rem;
+    padding: 1.5rem;
 }
 .volunteer {
     margin: 2rem 0;
+    padding: 1.5rem;
 }
 .volunteer h2 {
     color: var(--secondary-color);
