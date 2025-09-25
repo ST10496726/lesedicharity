@@ -203,3 +203,45 @@ body{
         font-size: 0.9rem;
     }
 }
+/* Desktop */
+@media (min-width: 1200px) {
+    /*styles for desktop */ .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: value;
+    }
+    .column {
+        width: 30%;
+        margin: 10px;
+        font-size: 18px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: value;
+    }
+    nav li {
+        margin-right: 20px;
+    }
+}
+/* Laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for laptop */
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: value;
+    }
+.column {
+    width: 20%;
+    margin: 5px;
+    font-size: 7px;
+}
+nav ul {
+    display: flex;
+    justify-content: value;
+}
+nav li {
+    margin-right: 15px;
+}
+
+}
