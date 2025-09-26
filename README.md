@@ -31,8 +31,8 @@ You can support Lesedi Organisation in several ways:
 📱 Phone: 018 055 3896
 
 ---
-## 📌 Changelog
-### v1.2.0 – September 24, 2025
+# 📌 Changelog
+### Changes made: 
 - **Part 1 had no wire frames for my pages , below there is wireframe images**
   ### Wire Frames
 ![image alt](https://github.com/ST10496726/lesedicharity/blob/f2b6c3b83c27711172b15ea75108b924f9daaa2f/wireframeaboutus.jpg)
