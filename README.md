@@ -32,39 +32,41 @@ You can support Lesedi Organisation in several ways:
 
 ---
 # 📌 Changelog
-### Changes made: 
+### Feedback for Part 1: 
 - **Part 1 had no wire frames for my pages , below there is wireframe images**
-  ### Wire Frames
+- **Pages on Part 1 had no enough content , added more content on the pages**
+- **Html code had no comments in between , added the comments**
+### Wire Frames
 ![image alt](https://github.com/ST10496726/lesedicharity/blob/f2b6c3b83c27711172b15ea75108b924f9daaa2f/wireframeaboutus.jpg)
 
-- **Part 1 also needed comments on my html code , I have added comments on my html code**
-- **Part 1 also needed more content on my pages , I have added more content on each page**
+### New changes on the code :
+- **Images that were included in the html were removed as I added more information on the pages**
+  
 
-### Test screenshots of my web pages on different devices
-**Laptop view**
-![image_alt](https://github.com/ST10496726/lesedicharity/blob/b16a92d7deda0e0c7605a1fd33d72a37b4b3c946/26-09-2025-11-17-30.png)
-![image_alt](https://github.com/ST10496726/lesedicharity/blob/b16a92d7deda0e0c7605a1fd33d72a37b4b3c946/26-09-2025-11-16-35.png)
-**Phone view**
-![image_alt](https://github.com/ST10496726/lesedicharity/blob/74afb3ca48ca01041db25508d71b929ba5a99ad2/Image.jfif)
-![image_alt](https://github.com/ST10496726/lesedicharity/blob/74afb3ca48ca01041db25508d71b929ba5a99ad2/Image%20(1).jfif)
-![image_alt](https://github.com/ST10496726/lesedicharity/blob/74afb3ca48ca01041db25508d71b929ba5a99ad2/Image%20(2).jfif)
+## Test screenshots of my web pages on different devices
+### Laptop View
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/a02a94fc8635e3c4584e855b57c589e59e388a0c/Laptop%20img.png)
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/a02a94fc8635e3c4584e855b57c589e59e388a0c/Laptop%20img%202.png)
+
+### Phone view
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/a02a94fc8635e3c4584e855b57c589e59e388a0c/Phone%20img.jfif)
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/a02a94fc8635e3c4584e855b57c589e59e388a0c/Phone%20img%203.jfif)
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/a02a94fc8635e3c4584e855b57c589e59e388a0c/Phone%20img%204.jfif)
 
 ### References
-AI, Q., 2017. unsplash.com. [Online] 
-Available at: https://unsplash.com/photos/black-corded-telephone-4SNUcHPiC8c 
-[Accessed 21 August 2025]
-Gordon, A., 2020. unsplash.com. [Online] 
-Available at: https://unsplash.com/photos/person-holding-white-and-blue-ceramicmug-DPW3OKMxPN0 
-[Accessed 21 August 2025]. 
-Marshall, T., 2016. unsplash.com. [Online] 
-Available at: https://unsplash.com/photos/hands-formed-together-with-red-heartpaint-cAtzHUz7Z8g 
-[Accessed 21 August 2025]. 
-Pawar, V., 2020. unsplash.com. [Online] 
-Available at: https://unsplash.com/photos/group-of-women-sitting-on-brown-sandduring-daytime-exU18-IbCk8 
-[Accessed 21 August 2025]. 
-Walle, R., 2016. unsplash.com. [Online] 
-Available at: https://unsplash.com/photos/man-and-woman-holding-hands-on-streetUOwvwZ9Dy6w 
-[Accessed 21 August 2025]. 
+Chris, K., 2022. freecodecamp.org. [Online] 
+Available at: https://www.freecodecamp.org/news/how-to-link-css-to-html/
+[Accessed 25 September 2025].
+
+Haim, I., 2025. elementor.com. [Online] 
+Available at: https://elementor.com/blog/margin-vs-padding/#:~:text=Content:%20The%20actual%20text%2C%20image,separating%20it%20from%20other%20elements.
+[Accessed 25 September 2025].
+
+Staff, C., 2025. coursera.org. [Online] 
+Available at: https://www.coursera.org/articles/responsive-web-design
+[Accessed 25 September 2025].
+
+
 
 
 ---
