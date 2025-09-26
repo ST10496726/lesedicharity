@@ -49,7 +49,22 @@ You can support Lesedi Organisation in several ways:
 ![image_alt](https://github.com/ST10496726/lesedicharity/blob/74afb3ca48ca01041db25508d71b929ba5a99ad2/Image%20(1).jfif)
 ![image_alt](https://github.com/ST10496726/lesedicharity/blob/74afb3ca48ca01041db25508d71b929ba5a99ad2/Image%20(2).jfif)
 
-
+### References
+AI, Q., 2017. unsplash.com. [Online] 
+Available at: https://unsplash.com/photos/black-corded-telephone-4SNUcHPiC8c 
+[Accessed 21 August 2025]
+Gordon, A., 2020. unsplash.com. [Online] 
+Available at: https://unsplash.com/photos/person-holding-white-and-blue-ceramicmug-DPW3OKMxPN0 
+[Accessed 21 August 2025]. 
+Marshall, T., 2016. unsplash.com. [Online] 
+Available at: https://unsplash.com/photos/hands-formed-together-with-red-heartpaint-cAtzHUz7Z8g 
+[Accessed 21 August 2025]. 
+Pawar, V., 2020. unsplash.com. [Online] 
+Available at: https://unsplash.com/photos/group-of-women-sitting-on-brown-sandduring-daytime-exU18-IbCk8 
+[Accessed 21 August 2025]. 
+Walle, R., 2016. unsplash.com. [Online] 
+Available at: https://unsplash.com/photos/man-and-woman-holding-hands-on-streetUOwvwZ9Dy6w 
+[Accessed 21 August 2025]. 
 
 
 ---
