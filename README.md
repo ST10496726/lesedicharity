@@ -27,7 +27,9 @@ You can support Lesedi Organisation in several ways:
 ## 📞 Contact Us
 **Lesedi Organisation**  
 📍 123 Sunshine Street, Johannesburg, South Africa 
+
 📧 Email: info@lesediorg.org  
+
 📱 Phone: 012 345 6789
 
 ---
@@ -39,9 +41,11 @@ You can support Lesedi Organisation in several ways:
 - **Html code had no comments in between , added the comments**
 ### Wire Frames
 ![image alt](https://github.com/ST10496726/lesedicharity/blob/3708f9dd6e73d070fb0e581b40e4acf1d599bf79/Home%20page.png)
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/47faef621434e1f69fb410acae117e5915541f48/Get%20Involved.png)
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/47faef621434e1f69fb410acae117e5915541f48/Contact%20Us.png)
 
 ### New changes on the code :
-- **Images that were included in the html were removed as I added more information on the pages**
+- **Images that were included in the html have been removed as I added more information on the pages**
 - **Changes made on the landline number and the address**
   
 
