@@ -26,10 +26,11 @@ You can support Lesedi Organisation in several ways:
 
 ## 📞 Contact Us
 **Lesedi Organisation**  
-📍 1 Alpha Street Potchindustria, Potchefstroom  
+📍 123 Sunshine Street, Johannesburg, South Africa 
 📧 Email: info@lesediorg.org  
-📱 Phone: 018 055 3896
+📱 Phone: 012 345 6789
 
+---
 ---
 # 📌 Changelog
 ### Feedback for Part 1: 
@@ -37,10 +38,11 @@ You can support Lesedi Organisation in several ways:
 - **Pages on Part 1 had no enough content , added more content on the pages**
 - **Html code had no comments in between , added the comments**
 ### Wire Frames
-![image alt](https://github.com/ST10496726/lesedicharity/blob/f2b6c3b83c27711172b15ea75108b924f9daaa2f/wireframeaboutus.jpg)
+![image alt](https://github.com/ST10496726/lesedicharity/blob/3708f9dd6e73d070fb0e581b40e4acf1d599bf79/Home%20page.png)
 
 ### New changes on the code :
 - **Images that were included in the html were removed as I added more information on the pages**
+- **Changes made on the landline number and the address**
   
 
 ## Test screenshots of my web pages on different devices
@@ -53,6 +55,10 @@ You can support Lesedi Organisation in several ways:
 ![image_alt](https://github.com/ST10496726/lesedicharity/blob/a02a94fc8635e3c4584e855b57c589e59e388a0c/Phone%20img%203.jfif)
 ![image_alt](https://github.com/ST10496726/lesedicharity/blob/a02a94fc8635e3c4584e855b57c589e59e388a0c/Phone%20img%204.jfif)
 
+### Tablet View 
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/02825d66c1c11dc43e1cf0d3a132518261b28b59/Tablet%20view.jfif)
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/02825d66c1c11dc43e1cf0d3a132518261b28b59/Tablet%20view%20(2).jfif)
+---
 ### References
 Chris, K., 2022. freecodecamp.org. [Online] 
 Available at: https://www.freecodecamp.org/news/how-to-link-css-to-html/
