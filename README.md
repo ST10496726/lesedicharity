@@ -34,12 +34,16 @@ You can support Lesedi Organisation in several ways:
 ## 📌 Changelog
 ### v1.2.0 – September 24, 2025
 - **Part 1 had no wire frames for my pages , below there is wireframe images**
+  ### Wire Frames
 ![image alt](https://github.com/ST10496726/lesedicharity/blob/f2b6c3b83c27711172b15ea75108b924f9daaa2f/wireframeaboutus.jpg)
 
+- **Part 1 also needed comments on my html code , I have added comments on my html code**
+- **Part 1 also needed more content on my pages , I have added more content on each page**
+
+### Test screenshots of my web pages on different devices
 
 
-### Wire Frames
-![Wireframe] (img/wireframeaboutus.jpg)
+
 
 
 ---
