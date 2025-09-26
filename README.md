@@ -41,10 +41,13 @@ You can support Lesedi Organisation in several ways:
 - **Part 1 also needed more content on my pages , I have added more content on each page**
 
 ### Test screenshots of my web pages on different devices
-Laptop view
+**Laptop view**
 ![image_alt](https://github.com/ST10496726/lesedicharity/blob/b16a92d7deda0e0c7605a1fd33d72a37b4b3c946/26-09-2025-11-17-30.png)
 ![image_alt](https://github.com/ST10496726/lesedicharity/blob/b16a92d7deda0e0c7605a1fd33d72a37b4b3c946/26-09-2025-11-16-35.png)
-
+**Phone view**
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/74afb3ca48ca01041db25508d71b929ba5a99ad2/Image.jfif)
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/74afb3ca48ca01041db25508d71b929ba5a99ad2/Image%20(1).jfif)
+![image_alt](https://github.com/ST10496726/lesedicharity/blob/74afb3ca48ca01041db25508d71b929ba5a99ad2/Image%20(2).jfif)
 
 
 
