@@ -1,54 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lesedi Charity | Get Involved</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-    <body>
-        <!--Navigation-->
-        <nav class="navbar">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | Lesedi Charity</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="project.html">Projects</a>
-        <a href="involved.html" class="nav-btn active">Get involved</a>
-        <a href="contact.html">Contact Us</a> 
-        </nav> 
-    <!--Page Content-->
-    <main class="container">
-    <h1>Get Involved with Lesedi Organisation</h1>
-<section class="donations">
-    <p1>Your contribution helps us provide sanitary pads, run educational workshops, and expand our reach to more schools. Every donation, <br>
-        big or small, makes a real difference in a girl’s life.</p1>
-    <ul>
-        <li>One-time donations</li>
-        <li>Monthly giving options</li>
-        <li>Sponsorship opportunities</li>
-    </ul>
-        <img src="img/helping.jpg" width="300" height="200">
- </section>
- <section class="volunteer">
-    <h2>Volunteer</h2>
-    <h3>Join us in making an impact! Volunteers help with:</h3>
-    <ol>
-        <li>Distributing pads in schools and communities</li>
-        <li>Assisting with workshops and awareness campaigns</li>
-        <li>Fundraising events and drives</li>
-        <li>Administrative and creative support (design, social media, writing, etc.)</li>
-    </ol>
-</section>
-<section class="partner">
-    <h4>Partner With Us</h4>
-    <p>We welcome partnerships with schools, businesses, NGOs, and community groups who share our vision. Together, we can create sustainable <br>
-         solutions to end period poverty.</p>
-</section>
-<section class="Fundraise">
-    <h5>Fundraise for Us</h5>
-    <ul>
-        <li>Run donation drives for pads and hygiene products</li>
-        <li>Celebrate birthdays or milestones by raising funds for Lesedi</li>
-    </ul>
-</section>
-</main>
+        <a href="involved.html" class="active">Get Involved</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main class="involved-page">
+        <h1>Get Involved</h1>
+        <p>Join Lesedi Charity in making a difference in our communities. Whether you donate, volunteer, or simply spread awareness, every action counts!</p>
+
+        <!-- Ways to Get Involved -->
+        <section class="ways">
+            <h2>Ways You Can Help</h2>
+            <div class="involvement-options">
+                <div class="option">
+                    <h3>Volunteer</h3>
+                    <p>Participate in educational programs, community projects, and health initiatives. Your time and skills can transform lives.</p>
+                </div>
+                <div class="option">
+                    <h3>Donate</h3>
+                    <p>Contribute to our projects and programs. Donations help us provide supplies, workshops, and support for families in need.</p>
+                </div>
+                <div class="option">
+                    <h3>Fundraise</h3>
+                    <p>Create personal or community fundraisers to support our mission. Inspire others to contribute and make an impact.</p>
+                </div>
+                <div class="option">
+                    <h3>Partner / Sponsor</h3>
+                    <p>Local businesses and organizations can collaborate with us to amplify our projects and outreach programs.</p>
+                </div>
+                <div class="option">
+                    <h3>Spread Awareness</h3>
+                    <p>Share our initiatives on social media, with friends, and in your community. Awareness helps us grow our impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer / Donation Form -->
+        <section class="volunteer-form">
+            <h2>Sign Up to Get Involved</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="involvement">I want to:</label>
+                <select id="involvement" name="involvement" required>
+                    <option value="">--Select--</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="donate">Donate</option>
+                    <option value="fundraise">Fundraise</option>
+                    <option value="partner">Partner / Sponsor</option>
+                    <option value="awareness">Spread Awareness</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us more about your interest"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Make a Difference Today</h2>
+            <p>Your contribution, big or small, helps us bring positive change to our communities.</p>
+            <a href="contact.html">Contact Us for More Info</a>
+        </section>
+    </main>
 </body>
 </html>
