@@ -2,9 +2,9 @@
    Base + Global Styles
 ========================== */
 :root {
-    --primary-color: brown;
-    --secondary-color: darkgreen;
-    --dark-color: #333;
+    --primary-color: rgb(165, 91, 42);
+    --secondary-color: rgb(68, 57, 6);
+    --dark-color: #963306;
     --background-color: antiquewhite;
 }
 body {
