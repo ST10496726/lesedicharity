@@ -33,10 +33,9 @@ You can support Lesedi Organisation in several ways:
 ---
 ## 📌 Changelog
 ### v1.2.0 – September 24, 2025
-- **Added**: Comments on the code
-- **Require**: On Part 1 , I had not put comments on my code , so I added the comments on my code
-- **Added**: Wireframes images for each page
-- **Require**: There were no wireframes added on Part 1 , I added the wireframes on the img folder
+- **Part 1 had no wire frames for my pages , below there is wireframe images**
+
+
 
 
 ### Wire Frames
