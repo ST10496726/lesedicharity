@@ -274,3 +274,19 @@ body {
         margin-right: 20px;
     }
 }
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+/* Hover effect */
+.nav-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+/* Active button */
+.nav-btn.active {
+    background-color: var(--dark-color);
+}
