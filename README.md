@@ -40,6 +40,22 @@ You can support Lesedi Organisation in several ways:
 -  Part 2 had no images on all of the pages , I have added images on the Home page and Project Page
 -  I have added more content on the pages , more detailed paragraphs on what the organisation does.
 -  enquiry.html is in my involved.html , user is able to enquire about volunteering , spreading awareness and more...
+  
+### References for the new images
+Brito, P., 2021. Unsplash.com. [Online] 
+Available at: https://unsplash.com/photos/girl-in-blue-jacket-holding-red-and-silver-ring-Y-3Dt0us7e0
+[Accessed 16 November 2025].
+HOOGHLY, C., 2024. unsplash.com. [Online] 
+Available at: https://unsplash.com/photos/a-classroom-full-of-students-sitting-at-desks-I4lLt9g8i3k
+[Accessed 16 November 2025].
+Malhotra, S., 2024. unsplash.com. [Online] 
+Available at: https://unsplash.com/photos/a-woman-holding-up-a-box-of-lipstick-flaqjAY7Neo
+[Accessed 16 November 2025].
+Wonderlane, 2019. unsplash.com. [Online] 
+Available at: https://unsplash.com/photos/group-of-women-sitting-on-chair-while-listening-Lgyzyot6TkQ
+[Accessed 16 November 2025].
+
+
 ### Feedback for Part 2: 
 -  I need to use lowercases when naming files : I have tried to change the folder name of CSS to css but it does not change the folder to lower cases on github. It only works on my local drive
 -  I changed back my CSS folder back to caps when I saw it does not change on github
