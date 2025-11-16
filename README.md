@@ -35,6 +35,8 @@ You can support Lesedi Organisation in several ways:
 ---
 ---
 # 📌 Changelog
+### Feedback for Part 2: 
+- ** I need to use lowercases when naming files : I have tried to change the folder name of CSS to css but it does not change the folder to lower cases on github. It only works on my local drive
 ### Feedback for Part 1: 
 - **Part 1 had no wire frames for my pages , below there is wireframe images**
 - **Pages on Part 1 had no enough content , added more content on the pages**
