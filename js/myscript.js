@@ -94,12 +94,11 @@ function openLightbox(src, alt) {
 /* -------------------------------
    4. Newsletter Form Validation
 --------------------------------- */
-const newsletterForm = document.getElementById('newsletterForm');
 const newsletterEmail = document.getElementById('newsletterEmail');
 const newsletterMsg = document.getElementById('newsletterMsg');
 
-if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
+if (document.getElementById('newsletterForm')) {
+    (document.getElementById('newsletterForm')).addEventListener('submit', (e) => {
         e.preventDefault();
 
         const email = newsletterEmail.value.trim();
@@ -113,7 +112,7 @@ if (newsletterForm) {
 
         newsletterMsg.textContent = "Subscribed successfully!";
         newsletterMsg.style.color = "green";
-        newsletterForm.reset();
+        (document.getElementById('newsletterForm')).reset();
     });
 }
 
@@ -252,7 +251,6 @@ window.addEventListener("click", (e) => {
 /* -------------------------
        SCROLL ANIMATIONS
 ---------------------------*/
-const fadeElements = document.querySelectorAll(".fade-in");
 
 const appearScroll = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -263,3 +261,120 @@ const appearScroll = new IntersectionObserver(entries => {
 });
 
 (document.querySelectorAll('.fade-in')).forEach(el => appearScroll.observe(el));
+
+// -------------------------------
+// MOBILE MENU TOGGLE (future proof)
+// -------------------------------
+const navbar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-toggle");
+
+if (menuBtn) {
+    menuBtn.addEventListener("click", () => {
+        navbar.classList.toggle("open");
+    });
+}
+
+// -------------------------------
+// FADE-IN ON SCROLL EFFECT
+// -------------------------------
+const fadeElements = document.querySelectorAll(".fade-in");
+
+function handleFadeIn() {
+    (document.querySelectorAll(".fade-in")).forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (position < windowHeight - 100) {
+            el.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", handleFadeIn);
+window.addEventListener("load", handleFadeIn);
+
+
+// -------------------------------
+// CONTACT FORM VALIDATION
+// -------------------------------
+const contactForm = document.getElementById("contactForm");
+const contactSuccess = document.getElementById("contact-success");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // stop page refresh
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Simple validation
+        if (name === "" || email === "" || subject === "" || message === "") {
+            alert("Please fill out all fields before submitting.");
+            return;
+        }
+
+        if (!email.includes("@") || !email.includes(".")) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        // Show success message
+        contactSuccess.style.display = "block";
+        contactSuccess.style.opacity = "1";
+
+        // Clear form
+        contactForm.reset();
+
+        // Hide after 5 seconds
+        setTimeout(() => {
+            contactSuccess.style.opacity = "0";
+        }, 5000);
+    });
+}
+
+
+// -------------------------------
+// NEWSLETTER FORM
+// -------------------------------
+const newsletterForm = document.getElementById("newsletterForm");
+const newsletterSuccess = document.getElementById("newsletter-success");
+
+if (document.getElementById('newsletterForm')) {
+    (document.getElementById('newsletterForm')).addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const email = document.getElementById("newsletterEmail").value.trim();
+
+        if (email === "" || !email.includes("@")) {
+            alert("Please enter a valid email to subscribe.");
+            return;
+        }
+
+        // Show success message
+        newsletterSuccess.style.display = "block";
+        newsletterSuccess.style.opacity = "1";
+
+        (document.getElementById('newsletterForm')).reset();
+
+        // Hide message
+        setTimeout(() => {
+            newsletterSuccess.style.opacity = "0";
+        }, 5000);
+    });
+}
+
+
+// -------------------------------
+// SMOOTH SCROLL (optional future)
+// -------------------------------
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+});
