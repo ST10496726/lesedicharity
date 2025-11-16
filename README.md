@@ -45,12 +45,15 @@ You can support Lesedi Organisation in several ways:
 Brito, P., 2021. Unsplash.com. [Online] 
 Available at: https://unsplash.com/photos/girl-in-blue-jacket-holding-red-and-silver-ring-Y-3Dt0us7e0
 [Accessed 16 November 2025].
+
 HOOGHLY, C., 2024. unsplash.com. [Online] 
 Available at: https://unsplash.com/photos/a-classroom-full-of-students-sitting-at-desks-I4lLt9g8i3k
 [Accessed 16 November 2025].
+
 Malhotra, S., 2024. unsplash.com. [Online] 
 Available at: https://unsplash.com/photos/a-woman-holding-up-a-box-of-lipstick-flaqjAY7Neo
 [Accessed 16 November 2025].
+
 Wonderlane, 2019. unsplash.com. [Online] 
 Available at: https://unsplash.com/photos/group-of-women-sitting-on-chair-while-listening-Lgyzyot6TkQ
 [Accessed 16 November 2025].
