@@ -38,7 +38,8 @@ You can support Lesedi Organisation in several ways:
 ### Part 3
 -  New images added to the webpages
 -  Part 2 had no images on all of the pages , I have added images on the Home page and Project Page
--  I have added more content on the pages , more detailed paragraphs on what the organisation does. 
+-  I have added more content on the pages , more detailed paragraphs on what the organisation does.
+-  enquiry.html is in my involved.html , user is able to enquire about volunteering , spreading awareness and more...
 ### Feedback for Part 2: 
 -  I need to use lowercases when naming files : I have tried to change the folder name of CSS to css but it does not change the folder to lower cases on github. It only works on my local drive
 -  I changed back my CSS folder back to caps when I saw it does not change on github
