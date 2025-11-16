@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Lesedi Charity</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Lesedi Charity empowers young girls through education, health, and community programs. Join us in making a difference.">
+    <meta name="keywords" content="Lesedi Charity, donations, volunteer, community development, education support">
+
     <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="projects.html">Projects</a>
-            <a href="involved.html">Get Involved</a>
-            <a href="contact.html">Contact Us</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="project.html">Projects</a>
+        <a href="involved.html">Get Involved</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero fade-in">
         <h1>Empowering Communities, Changing Lives</h1>
         <p>Join Lesedi Charity in making a real difference in the lives of young girls in school.</p>
         <a href="involved.html" class="btn">Get Involved</a>
@@ -26,23 +34,30 @@
     <section class="featured-programs">
         <h2>Our Key Programs</h2>
         <div class="program-cards">
+
             <div class="program-card">
                 <h3>Education Support</h3>
                 <p>Providing school supplies, tutoring, and scholarships for children in need.</p>
+                <button class="learn-more-btn" data-modal="programModal">Learn More</button>
             </div>
+
             <div class="program-card">
                 <h3>Health Initiatives</h3>
                 <p>Hosting health workshops, clinics, and awareness campaigns in local schools.</p>
+                <button class="learn-more-btn" data-modal="programModal">Learn More</button>
             </div>
+
             <div class="program-card">
                 <h3>Community Development</h3>
                 <p>Engaging volunteers in projects that improve the lives of the young girls in schools.</p>
+                <button class="learn-more-btn" data-modal="programModal">Learn More</button>
             </div>
+
         </div>
     </section>
 
-    <!-- Impact Highlights -->
-    <section class="impact-highlights">
+    <!-- IMPACT HIGHLIGHTS -->
+    <section class="impact-highlights fade-in">
         <h2>Our Impact</h2>
         <div class="impact-cards">
             <div class="impact-card">
@@ -60,18 +75,38 @@
         </div>
     </section>
 
+    <!-- LIGHTBOX GALLERY (required) -->
+    <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery" id="gallery">
+            <img src="images/img1.jpg" alt="Community event" class="gallery-img">
+            <img src="images/img2.jpg" alt="Education support" class="gallery-img">
+            <img src="images/img3.jpg" alt="Volunteers at work" class="gallery-img">
+        </div>
+    </section>
+
+    <!-- Modal Popup -->
+    <div id="programModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Program Details</h2>
+            <p>This program is aimed at empowering young girls through community-driven initiatives, education support, and health awareness campaigns.</p>
+        </div>
+    </div>
+
     <!-- Newsletter Signup -->
     <section class="newsletter">
         <h2>Stay Updated</h2>
         <p>Subscribe to our newsletter to receive updates on projects and events.</p>
-        <form action="#" method="post">
-            <input type="email" placeholder="Enter your email" required>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Enter your email" id="newsletterEmail" required>
             <button type="submit">Subscribe</button>
+            <small id="newsletterMsg"></small>
         </form>
     </section>
 
     <!-- Call to Action -->
-    <section class="cta">
+    <section class="cta fade-in">
         <h2>Make a Difference Today</h2>
         <p>Your support helps us transform lives and communities.</p>
         <a href="involved.html" class="btn">Volunteer or Donate</a>
@@ -81,5 +116,9 @@
     <footer>
         <p>&copy; 2025 Lesedi Charity | <a href="privacy.html">Privacy Policy</a></p>
     </footer>
+
+    <!-- External Script -->
+    <script src="js/myscript.js"></script>
+
 </body>
 </html>
