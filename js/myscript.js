@@ -166,3 +166,37 @@ function smoothScrollTo(elementID) {
     });
 }
 
+// -------------------------------
+// GET INVOLVED FORM VALIDATION
+// -------------------------------
+const involvedForm = document.getElementById("involvedForm");
+const involvedSuccess = document.getElementById("involved-success");
+
+if (involvedForm) {
+    involvedForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const involvement = document.getElementById("involvement").value.trim();
+
+        if (name === "" || email === "" || involvement === "") {
+            alert("Please complete all required fields.");
+            return;
+        }
+
+        if (!email.includes("@")) {
+            alert("Please enter a valid email.");
+            return;
+        }
+
+        involvedSuccess.style.display = "block";
+        involvedSuccess.style.opacity = "1";
+        involvedForm.reset();
+
+        setTimeout(() => {
+            involvedSuccess.style.opacity = "0";
+        }, 5000);
+    });
+}
+

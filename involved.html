@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Involved | Lesedi Charity</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="js/myscript.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -16,40 +17,32 @@
     </nav>
 
     <main class="involved-page">
-        <h1>Get Involved</h1>
-        <p>Join Lesedi Charity in making a difference in our communities. Whether you donate, volunteer, or simply spread awareness, every action counts!</p>
+
+        <h1 class="fade-in">Get Involved</h1>
+        <p class="fade-in">Join Lesedi Charity in making a difference in our communities. Whether you donate, volunteer, or simply spread awareness, every action counts!</p>
 
         <!-- Ways to Get Involved -->
-        <section class="ways">
+        <section class="ways fade-in">
             <h2>Ways You Can Help</h2>
             <div class="involvement-options">
-                <div class="option">
-                    <h3>Volunteer</h3>
-                    <p>Participate in educational programs, community projects, and health initiatives. Your time and skills can transform lives.</p>
-                </div>
-                <div class="option">
-                    <h3>Donate</h3>
-                    <p>Contribute to our projects and programs. Donations help us provide supplies, workshops, and support for young girls in need.</p>
-                </div>
-                <div class="option">
-                    <h3>Fundraise</h3>
-                    <p>Create personal or community fundraisers to support our mission. Inspire others to contribute and make an impact.</p>
-                </div>
-                <div class="option">
-                    <h3>Partner / Sponsor</h3>
-                    <p>Local businesses and organizations can collaborate with us to amplify our projects and outreach programs.</p>
-                </div>
-                <div class="option">
-                    <h3>Spread Awareness</h3>
-                    <p>Share our initiatives on social media, with friends, and in your community. Awareness helps us grow our impact.</p>
-                </div>
+                <div class="option"><h3>Volunteer</h3><p>Participate in educational programs, community projects, and health initiatives.</p></div>
+                <div class="option"><h3>Donate</h3><p>Help fund supplies, workshops, and menstrual health support.</p></div>
+                <div class="option"><h3>Fundraise</h3><p>Create campaigns to support our efforts.</p></div>
+                <div class="option"><h3>Partner / Sponsor</h3><p>Work with us to expand our programs.</p></div>
+                <div class="option"><h3>Spread Awareness</h3><p>Share our story and help others learn about our mission.</p></div>
             </div>
         </section>
 
         <!-- Volunteer / Donation Form -->
-        <section class="volunteer-form">
+        <section class="volunteer-form fade-in">
             <h2>Sign Up to Get Involved</h2>
-            <form action="#" method="post">
+
+            <!-- SUCCESS MESSAGE -->
+            <div id="involved-success" class="success-message" style="display:none;">
+                Thank you! Your submission has been received. We will contact you soon.
+            </div>
+
+            <form id="involvedForm" action="#" method="post">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -74,11 +67,12 @@
         </section>
 
         <!-- Call to Action -->
-        <section class="cta">
+        <section class="cta fade-in">
             <h2>Make a Difference Today</h2>
-            <p>Your contribution, big or small, helps us bring positive change to our communities.</p>
+            <p>Your contribution helps us uplift and support girls in schools.</p>
             <a href="contact.html">Contact Us for More Info</a>
         </section>
+
     </main>
 </body>
 </html>
