@@ -1001,3 +1001,57 @@ body, main {
     object-fit: contain;
     border-radius: 8px;
 }
+
+/* Make all images scale automatically within their container */
+img {
+    max-width: 100%;   /* Image cannot exceed the width of its container */
+    height: auto;      /* Maintain aspect ratio */
+    display: block;    /* Removes small gaps under images */
+}
+
+/* Specific for program cards */
+.program-card img {
+    width: 100%;       /* Fill the program card width */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners */
+    object-fit: cover;  /* Ensures images fill the area nicely */
+}
+
+/* Gallery images */
+.gallery-img {
+    width: 100%;
+    max-width: 300px;  /* Optional: set maximum width for desktop */
+    height: auto;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Responsive layout for program cards */
+.program-cards {
+    display: flex;
+    flex-wrap: wrap;      /* Allow wrapping on smaller screens */
+    gap: 20px;
+}
+
+.program-card {
+    flex: 1 1 300px;      /* Grow and shrink, min width 300px */
+    box-sizing: border-box;
+}
+.container, .program-cards, .gallery {
+    width: 90%;          /* Relative to screen width */
+    max-width: 1200px;   /* Optional: limits on large screens */
+    margin: 0 auto;      /* Center the container */
+}
+
+/* Adjust layout for small screens */
+@media screen and (max-width: 768px) {
+    .program-cards {
+        flex-direction: column;
+    }
+
+    .gallery-img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
