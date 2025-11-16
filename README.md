@@ -35,10 +35,12 @@ You can support Lesedi Organisation in several ways:
 ---
 ---
 # 📌 Changelog
+### Part 3
+- ** New images added to the webpages
+- ** Part 2 had no images on all of the pages , I have added images on the Home page and Project Page 
 ### Feedback for Part 2: 
 - ** I need to use lowercases when naming files : I have tried to change the folder name of CSS to css but it does not change the folder to lower cases on github. It only works on my local drive
-### Part 3
-- ** There were no images on part 2 as I had , removed them , I have added images back again.
+- ** I changed back my CSS folder back to caps when I saw it does not change on github
 ### Feedback for Part 1: 
 - **Part 1 had no wire frames for my pages , below there is wireframe images**
 - **Pages on Part 1 had no enough content , added more content on the pages**
