@@ -957,3 +957,25 @@ body, main {
     box-sizing: border-box;
     max-width: 1200px;      /* optional for larger screens */
 }
+/* --------------------------
+   PROJECT GALLERY RESPONSIVE
+--------------------------- */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;          /* Images wrap to next line on small screens */
+    gap: 10px;                /* Space between images */
+    justify-content: center;  /* Center images horizontally */
+}
+
+.project-gallery img {
+    flex: 1 1 250px;          /* Grow/shrink, min-width 250px */
+    max-width: 300px;         /* Optional max width */
+    height: auto;             /* Keep aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;        /* Crop if needed without distortion */
+    transition: transform 0.3s; /* optional hover effect */
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+}
