@@ -6,10 +6,9 @@
 /* -------------------------------
    1. Fade-in Animation on Scroll
 --------------------------------- */
-const fadeElements = document.querySelectorAll('.fade-in');
 
 function revealOnScroll() {
-    fadeElements.forEach(el => {
+    (document.querySelectorAll('.fade-in')).forEach(el => {
         const elementPos = el.getBoundingClientRect().top;
         const screenPos = window.innerHeight / 1.2;
 
@@ -200,3 +199,67 @@ if (involvedForm) {
     });
 }
 
+/* -------------------------
+   PROJECT SEARCH FILTER
+---------------------------*/
+const projectSearch = document.getElementById("projectSearch");
+const projects = document.querySelectorAll(".project");
+
+if (projectSearch) {
+    projectSearch.addEventListener("keyup", () => {
+        const keyword = projectSearch.value.toLowerCase();
+
+        projects.forEach(project => {
+            if (project.innerText.toLowerCase().includes(keyword)) {
+                project.style.display = "block";
+            } else {
+                project.style.display = "none";
+            }
+        });
+    });
+}
+
+/* -------------------------
+      LIGHTBOX GALLERY
+---------------------------*/
+const lightboxImages = document.querySelectorAll(".lightbox-img");
+const lightboxModal = document.getElementById("lightboxModal");
+const lightboxClose = document.getElementById("lightboxClose");
+const lightboxImg = document.getElementById("lightboxImg");
+
+if (lightboxImages) {
+    lightboxImages.forEach(img => {
+        img.addEventListener("click", () => {
+            lightboxModal.style.display = "block";
+            lightboxImg.src = img.src;
+        });
+    });
+}
+
+if (lightboxClose) {
+    lightboxClose.addEventListener("click", () => {
+        lightboxModal.style.display = "none";
+    });
+}
+
+/* Close modal by clicking outside the image */
+window.addEventListener("click", (e) => {
+    if (e.target === lightboxModal) {
+        lightboxModal.style.display = "none";
+    }
+});
+
+/* -------------------------
+       SCROLL ANIMATIONS
+---------------------------*/
+const fadeElements = document.querySelectorAll(".fade-in");
+
+const appearScroll = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+});
+
+(document.querySelectorAll('.fade-in')).forEach(el => appearScroll.observe(el));

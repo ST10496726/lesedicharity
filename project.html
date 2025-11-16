@@ -1,76 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lesedi Charity | Projects</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-    <body>
-        <!--Navigation-->
-        <nav class="navbar">
+<head>
+    <title>Lesedi Charity | Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Link JavaScript -->
+    <script defer src="js/myscript.js"></script>
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="project.html" class="nav-btn active">Projects</a>
         <a href="involved.html">Get involved</a>
-        <a href="contact.html">Contact Us</a>  
-        </nav>
-    <!--Page Content-->
-    <main class="container">
-    <h1>Our initiatives and Projects</h1>
-    <!--Project 1-->
-    <section class="project">
-    <h2> Sanitary Pad distribution</h2>
-    <p>We provide free sanitary pads to young girls in schools and underprivileged communities. This ensures that no learner <br>
-        has to miss classes due to lack of menstrual products.</p>
-    <ul>
-        <li>5000 pads distributed since 2018</li>
-        <li>12 schools reached</li>
-        <li>6000 girls supported</li>
-    </ul>   
-</section>
-<!--Project 2-->
-<section class="project">
-    <h3>Menstrual Health Education Workshops</h3>
-    <p>We host interactive sessions where girls learn about menstrual health, hygiene practices, and self-care. These workshops <br>
-        empower them with knowledge and confidence to manage their periods with dignity.</p>
-    <ol>
-        <li>Peer-to-peer learning activities</li>
-        <li>Q&A sessions to break myths and taboos</li>
-        <li>Distribution of informational booklets</li>
-    </ol>
-</section>
-<!--Project 3-->
-<section class="project">
-    <h4>Community Awareness Campaigns</h4>
-    <p>To break the stigma around menstruation, we involve parents, teachers, and community leaders in open conversations. By normalizing <br>
-        discussions, we help build supportive environments for young girls.</p>
-    <ul>
-        <li>School and community talks</li>
-        <li>Radio discussions and outreach programs</li>
-        <li>Partnerships with local leaders</li>
-    </ul>
-</section>
-<!--Project 4-->
-<section class="project">
-    <h5>Reusable Pads & SKills Training</h5>
-    <p>We support sustainable solutions by training women and girls to make reusable pads. This not only addresses period poverty but also <br>
-        creates small income opportunities.</p>
-    <ol>
-        <li>Eco-friendly and cost-effective products</li>
-        <li>Skills transfer and empowerment</li>
-        <li>Long-term impact for communities</li>
-    </ol>
-</section>
-<!--Project 4-->
-<section class="project">
-    <h6>Future Projects</h6>
-    <ul>
-        <li>Expanding our reach to rural schools across more provinces</li>
-        <li>Partnering with health professionals to include reproductive health education</li>
-        <li>Developing mentorship programs for girls</li>
-    </ul>
-</section>
-</main>
-</body>
+        <a href="contact.html">Contact Us</a>
+    </nav>
 
+    <main class="container">
+        <h1 class="fade-in">Our Initiatives and Projects</h1>
+
+        <!-- 🔍 SEARCH BAR (JS FILTER) -->
+        <section class="search-section fade-in">
+            <input type="text" id="projectSearch" placeholder="Search projects..." />
+        </section>
+
+        <!--Project 1-->
+        <section class="project fade-in">
+            <h2>Sanitary Pad Distribution</h2>
+            <p>We provide free sanitary pads to young girls in schools and underprivileged communities. This ensures that no learner 
+                has to miss classes due to lack of menstrual products.</p>
+
+            <ul>
+                <li>5000 pads distributed since 2018</li>
+                <li>12 schools reached</li>
+                <li>6000 girls supported</li>
+            </ul>
+
+            <!-- Gallery Trigger -->
+            <div class="project-gallery">
+                <img src="img/pads1.jpg" class="lightbox-img" alt="Sanitary pad distribution">
+                <img src="img/pads2.jpg" class="lightbox-img" alt="Pad donation event">
+            </div>
+        </section>
+
+        <!--Project 2-->
+        <section class="project fade-in">
+            <h3>Menstrual Health Education Workshops</h3>
+            <p>We host interactive sessions where girls learn about menstrual health, hygiene practices, and self-care. These workshops 
+                empower them with knowledge and confidence.</p>
+
+            <ol>
+                <li>Peer-to-peer learning activities</li>
+                <li>Q&A sessions to break myths and taboos</li>
+                <li>Distribution of informational booklets</li>
+            </ol>
+
+            <div class="project-gallery">
+                <img src="img/workshop1.jpg" class="lightbox-img" alt="Workshop session">
+                <img src="img/workshop2.jpg" class="lightbox-img" alt="Health education session">
+            </div>
+        </section>
+
+        <!--Project 3-->
+        <section class="project fade-in">
+            <h4>Community Awareness Campaigns</h4>
+            <p>We involve parents, teachers, and community leaders in open conversations to break the stigma around menstruation.</p>
+
+            <ul>
+                <li>School and community talks</li>
+                <li>Radio discussions and outreach programs</li>
+                <li>Partnerships with local leaders</li>
+            </ul>
+
+            <div class="project-gallery">
+                <img src="img/community1.jpg" class="lightbox-img" alt="Community awareness event">
+                <img src="img/community2.jpg" class="lightbox-img" alt="Local outreach program">
+            </div>
+        </section>
+
+        <!--Project 4-->
+        <section class="project fade-in">
+            <h5>Reusable Pads & Skills Training</h5>
+            <p>We train women and girls to make reusable pads — supporting sustainability and creating small income opportunities.</p>
+
+            <ol>
+                <li>Eco-friendly and cost-effective products</li>
+                <li>Skills transfer and empowerment</li>
+                <li>Long-term community impact</li>
+            </ol>
+
+            <div class="project-gallery">
+                <img src="img/reusable1.jpg" class="lightbox-img" alt="Reusable pad training">
+                <img src="img/reusable2.jpg" class="lightbox-img" alt="Skills workshop">
+            </div>
+        </section>
+
+        <!--Project 5-->
+        <section class="project fade-in">
+            <h6>Future Projects</h6>
+
+            <ul>
+                <li>Expanding our reach to rural schools across more provinces</li>
+                <li>Partnering with health professionals for reproductive health education</li>
+                <li>Developing mentorship programs for girls</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span id="lightboxClose">&times;</span>
+        <img id="lightboxImg" class="lightbox-content">
+    </div>
+
+</body>
 </html>
