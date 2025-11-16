@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Lesedi Charity</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Learn about Lesedi Charity, our mission to support young girls in schools, and our impact across South Africa.">
+    <meta name="keywords" content="Lesedi Charity, About Us, mission, vision, community work, menstrual health">
+
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <a href="index.html">Home</a>
@@ -16,78 +24,115 @@
     </nav>
 
     <main class="about-page">
-        <h1>About Lesedi Charity</h1>
-        <p>Lesedi Organisation is a non-profit initiative founded in 2018 with a mission to support young girls in schools who struggle to access sanitary pads. We aim to restore dignity, improve school attendance, and empower girls by providing essential menstrual health products and education.</p>
 
-        <!-- Mission and Vision -->
-        <section class="mission-vision">
-            <h2>Our Mission</h2>
-            <p>To ensure that no girl misses out on education due to a lack of sanitary pads, while promoting awareness, dignity, and equality in schools across South Africa.</p>
+        <h1 class="fade-in">About Lesedi Charity</h1>
+        <p class="fade-in">
+            Lesedi Organisation is a non-profit initiative founded in 2018 with a mission to support young girls in schools 
+            who struggle to access sanitary pads. We aim to restore dignity, improve school attendance, and empower girls by 
+            providing essential menstrual health products and education.
+        </p>
 
-            <h2>Our Vision</h2>
-            <p>A South Africa where every child has access to education and a safe environment to grow.</p>
+        <!-- Mission & Vision Accordion -->
+        <section class="mission-vision fade-in">
+            <h2>Our Mission & Vision</h2>
+
+            <button class="accordion">Our Mission</button>
+            <div class="accordion-panel">
+                <p>To ensure that no girl misses out on education due to a lack of sanitary pads, while promoting awareness, dignity, and equality in schools across South Africa.</p>
+            </div>
+
+            <button class="accordion">Our Vision</button>
+            <div class="accordion-panel">
+                <p>A South Africa where every child has access to education and a safe environment to grow.</p>
+            </div>
         </section>
 
-        <!-- Core Values -->
-        <section class="core-values">
+        <!-- Core Values Accordion -->
+        <section class="core-values fade-in">
             <h2>Our Core Values</h2>
-            <ul>
-                <li><strong>Compassion:</strong> We care deeply about the communities we serve.</li>
-                <li><strong>Integrity:</strong> We act with honesty and transparency in all we do.</li>
-                <li><strong>Collaboration:</strong> We work together with partners, volunteers, and communities.</li>
-                <li><strong>Empowerment:</strong> We help individuals and communities reach their full potential.</li>
-            </ul>
+
+            <button class="accordion">Core Values</button>
+            <div class="accordion-panel">
+                <ul>
+                    <li><strong>Compassion:</strong> We care deeply about the communities we serve.</li>
+                    <li><strong>Integrity:</strong> We act with honesty and transparency in all we do.</li>
+                    <li><strong>Collaboration:</strong> We work together with partners, volunteers, and communities.</li>
+                    <li><strong>Empowerment:</strong> We help individuals and communities reach their full potential.</li>
+                </ul>
+            </div>
         </section>
 
-        <!-- History / Story -->
-        <section class="history">
+        <!-- Story -->
+        <section class="history fade-in">
             <h2>Our Story</h2>
-            <p>Founded in 2018, Lesedi Charity began as a small community initiative to support local young girls in the community. Over the years, we have grown into a registered non-profit organization impacting hundreds of families across Johannesburg and beyond. Our journey has been driven by the belief that small acts of kindness can create lasting change.</p>
+            <p>Founded in 2018, Lesedi Charity began as a small community initiative to support young girls who needed sanitary products. Over the years, we have grown into a registered non-profit organization impacting hundreds of families across Johannesburg. Small acts of kindness built the foundation of lasting change.</p>
         </section>
 
-        <!-- Team -->
-        <section class="team">
+        <!-- Team Tabs -->
+        <section class="team fade-in">
             <h2>Meet Our Team</h2>
-            <div class="team-member">
-                <h3>Bella SIkhakhane – Founder & Director</h3>
-                <p>Passionate about child education and community development, Bella leads our programs with dedication and vision.</p>
+
+            <!-- Tab Buttons -->
+            <div class="tabs">
+                <button class="tab-btn active" data-target="tab-bella">Bella Sikhakhane</button>
+                <button class="tab-btn" data-target="tab-tsholo">Tsholofelo Monaisa</button>
             </div>
-            <div class="team-member">
-                <h3>Tsholofelo Monaisa – Program Manager</h3>
-                <p>Tsholofelo oversees our projects, ensuring they run smoothly and create maximum impact.</p>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <div id="tab-bella" class="tab-panel" style="display:block;">
+                    <h3>Bella Sikhakhane – Founder & Director</h3>
+                    <p>Passionate about child education and community development, Bella leads our programs with dedication and vision.</p>
+                </div>
+
+                <div id="tab-tsholo" class="tab-panel">
+                    <h3>Tsholofelo Monaisa – Program Manager</h3>
+                    <p>Tsholofelo oversees our projects, ensuring they run smoothly and create maximum impact.</p>
+                </div>
             </div>
-            <!-- Add more team members as needed -->
         </section>
 
         <!-- Programs Overview -->
-        <section class="programs">
+        <section class="programs fade-in">
             <h2>Our Programs</h2>
             <p>We run several key programs to support communities:</p>
             <ul>
-                <li><strong>Education Support:</strong> Providing school supplies, tutoring, and scholarships.</li>
-                <li><strong>Health Initiatives:</strong> Offering health workshops, clinics, and awareness campaigns.</li>
-                <li><strong>Community Development:</strong> Organizing volunteer activities and local improvement projects.</li>
+                <li><strong>Education Support:</strong> School supplies, tutoring, and scholarships.</li>
+                <li><strong>Health Initiatives:</strong> Health workshops, clinics, and awareness campaigns.</li>
+                <li><strong>Community Development:</strong> Volunteer activities and local improvement projects.</li>
             </ul>
-            <p>Learn more about our projects <a href="projects.html">here</a>.</p>
+            <p>Learn more about our work <a href="project.html">here</a>.</p>
         </section>
 
-        <!-- Impact / Achievements -->
-        <section class="impact">
+        <!-- Impact -->
+        <section class="impact fade-in">
             <h2>Our Impact</h2>
-            <p>Since our founding, Lesedi Charity has:</p>
             <ul>
-                <li>Supported over 500 children through educational programs.</li>
-                <li>Organized 20+ health workshops in local communities.</li>
-                <li>Engaged 200+ volunteers in community development activities.</li>
+                <li>Supported over 500 children through education programs.</li>
+                <li>Organized 20+ health workshops in communities.</li>
+                <li>Engaged 200+ volunteers in development activities.</li>
             </ul>
         </section>
 
         <!-- Call to Action -->
-        <section class="call-to-action">
+        <section class="call-to-action fade-in">
             <h2>Get Involved</h2>
-            <p>Join us in making a difference. You can volunteer, donate, or simply help spread awareness about our work.</p>
+            <p>Join us in making a difference. Volunteer, donate, or help spread awareness about our mission.</p>
             <p><a href="involved.html">Learn how to get involved</a></p>
         </section>
+
     </main>
+
+    <!-- External Script -->
+    <script src="js/myscript.js"></script>
+
+    <script>
+        // Activate accordions
+        activateAccordion(".accordion");
+
+        // Activate tabs
+        activateTabs(".tab-btn", ".tab-panel");
+    </script>
+
 </body>
 </html>
