@@ -378,3 +378,125 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+/* ===============================
+   7. INTERACTIVE MAP (Leaflet)
+   =============================== */
+
+// Only load if map element exists
+if (document.getElementById("charityMap")) {
+
+    // Create map
+    const map = L.map('charityMap').setView([-26.2041, 28.0473], 11); // Johannesburg default
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Add marker
+    L.marker([-26.2041, 28.0473])
+        .addTo(map)
+        .bindPopup("Lesedi Charity<br>Johannesburg")
+        .openPopup();
+}
+
+/* =====================================
+   8. DYNAMIC CONTENT LOADING (JSON)
+   ===================================== */
+
+// Container where items will load
+const dynamicSection = document.getElementById("dynamicContent");
+
+if (dynamicSection) {
+    fetch("data/posts.json") // You will create this JSON file
+        .then(response => response.json())
+        .then(items => {
+            let output = "";
+
+            items.forEach(item => {
+                output += `
+                    <div class="dynamic-card fade-in">
+                        <h3>${item.title}</h3>
+                        <p>${item.description}</p>
+                        <span class="tag">${item.category}</span>
+                    </div>
+                `;
+            });
+
+            dynamicSection.innerHTML = output;
+        });
+}
+
+/* =====================================
+   9. LIVE SEARCH + CATEGORY SORT
+   ===================================== */
+
+const searchBox = document.getElementById("searchContent");
+const sortSelect = document.getElementById("sortContent");
+
+if (searchBox || sortSelect) {
+    function updateFilter() {
+        const keyword = searchBox ? searchBox.value.toLowerCase() : "";
+        const category = sortSelect ? sortSelect.value : "all";
+
+        document.querySelectorAll(".dynamic-card").forEach(card => {
+            const text = card.innerText.toLowerCase();
+            const tag = card.querySelector(".tag").innerText.toLowerCase();
+
+            const matchesKeyword = text.includes(keyword);
+            const matchesCategory = category === "all" || tag === category;
+
+            card.style.display = (matchesKeyword && matchesCategory) ? "block" : "none";
+        });
+    }
+
+    if (searchBox) searchBox.addEventListener("keyup", updateFilter);
+    if (sortSelect) sortSelect.addEventListener("change", updateFilter);
+}
+
+/* =====================================
+   10. ENQUIRY FORM PROCESSING
+   ===================================== */
+
+const enquiryForm = document.getElementById("enquiryForm");
+const enquiryOutput = document.getElementById("enquiry-output");
+
+if (enquiryForm) {
+    enquiryForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("enqName").value.trim();
+        const email = document.getElementById("enqEmail").value.trim();
+        const type = document.getElementById("enqType").value; // services, products, volunteer, sponsor
+
+        if (name === "" || email === "") {
+            alert("Please complete all required fields.");
+            return;
+        }
+
+        let response = "";
+
+        switch (type) {
+            case "service":
+                response = "Thank you, " + name + ". Our team will contact you with service availability and pricing.";
+                break;
+
+            case "product":
+                response = "Thank you, " + name + ". Product stock levels will be sent to your email.";
+                break;
+
+            case "volunteer":
+                response = "Thank you for offering to volunteer, " + name + "! We will email you the onboarding steps.";
+                break;
+
+            case "sponsor":
+                response = "Thank you, " + name + " for your interest in sponsoring! A sponsorship pack will be emailed.";
+                break;
+        }
+
+        enquiryOutput.innerHTML = `<p class='success-box'>${response}</p>`;
+        enquiryForm.reset();
+    });
+}

@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lesedi Charity | Projects</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Lesedi Charity | Projects</title>
 
-    <!-- Link JavaScript -->
+    <link rel="stylesheet" href="CSS/style.css">
     <script defer src="js/myscript.js"></script>
 </head>
 
 <body>
 
-    <!--Navigation-->
+    <!-- Navigation -->
     <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="project.html" class="nav-btn active">Projects</a>
-        <a href="involved.html">Get involved</a>
+        <a href="project.html" class="active">Projects</a>
+        <a href="involved.html">Get Involved</a>
         <a href="contact.html">Contact Us</a>
     </nav>
 
     <main class="container">
         <h1 class="fade-in">Our Initiatives and Projects</h1>
 
-        <!-- 🔍 SEARCH BAR (JS FILTER) -->
+        <!-- Search bar -->
         <section class="search-section fade-in">
             <input type="text" id="projectSearch" placeholder="Search projects..." />
         </section>
 
-        <!--Project 1-->
+        <!-- Project 1 -->
         <section class="project fade-in">
             <h2>Sanitary Pad Distribution</h2>
-            <p>We provide free sanitary pads to young girls in schools and underprivileged communities. This ensures that no learner 
-                has to miss classes due to lack of menstrual products.</p>
+            <p>We provide free sanitary pads to young girls in schools and underprivileged communities...</p>
 
             <ul>
                 <li>5000 pads distributed since 2018</li>
@@ -40,80 +39,77 @@
                 <li>6000 girls supported</li>
             </ul>
 
-            <!-- Gallery Trigger -->
             <div class="project-gallery">
-                <img src="img/Pad.jpg" class="lightbox-img" alt="Sanitary pad distribution">
-                <img src="img/pads2.jpg" class="lightbox-img" alt="Pad donation event">
+                <img src="img/Pad.jpg" class="lightbox-img responsive-img" alt="Sanitary pad distribution">
+                <img src="img/pads2.jpg" class="lightbox-img responsive-img" alt="Pad donation event">
             </div>
         </section>
 
-        <!--Project 2-->
+        <!-- Project 2 -->
         <section class="project fade-in">
-            <h3>Menstrual Health Education Workshops</h3>
-            <p>We host interactive sessions where girls learn about menstrual health, hygiene practices, and self-care. These workshops 
-                empower them with knowledge and confidence.</p>
+            <h2>Menstrual Health Education Workshops</h2>
+            <p>We host interactive sessions where girls learn about menstrual health...</p>
 
             <ol>
                 <li>Peer-to-peer learning activities</li>
-                <li>Q&A sessions to break myths and taboos</li>
-                <li>Distribution of informational booklets</li>
+                <li>Q&A sessions to break myths</li>
+                <li>Distribution of booklets</li>
             </ol>
 
             <div class="project-gallery">
-                <img src="img/workshop1.jpg" class="lightbox-img" alt="Workshop session">
-                <img src="img/workshop2.jpg" class="lightbox-img" alt="Health education session">
+                <img src="img/workshop1.jpg" class="lightbox-img responsive-img" alt="Workshop session">
+                <img src="img/workshop2.jpg" class="lightbox-img responsive-img" alt="Health education session">
             </div>
         </section>
 
-        <!--Project 3-->
+        <!-- Project 3 -->
         <section class="project fade-in">
-            <h4>Community Awareness Campaigns</h4>
-            <p>We involve parents, teachers, and community leaders in open conversations to break the stigma around menstruation.</p>
+            <h2>Community Awareness Campaigns</h2>
+            <p>We involve parents, teachers and community leaders in open conversations...</p>
 
             <ul>
-                <li>School and community talks</li>
-                <li>Radio discussions and outreach programs</li>
-                <li>Partnerships with local leaders</li>
+                <li>School & community talks</li>
+                <li>Radio outreach</li>
+                <li>Work with local leaders</li>
             </ul>
 
             <div class="project-gallery">
-                <img src="img/community1.jpg" class="lightbox-img" alt="Community awareness event">
+                <img src="img/community1.jpg" class="lightbox-img responsive-img" alt="Community awareness event">
             </div>
         </section>
 
-        <!--Project 4-->
+        <!-- Project 4 -->
         <section class="project fade-in">
-            <h5>Reusable Pads & Skills Training</h5>
-            <p>We train women and girls to make reusable pads — supporting sustainability and creating small income opportunities.</p>
+            <h2>Reusable Pads & Skills Training</h2>
+            <p>We train women and girls to make reusable pads...</p>
 
             <ol>
-                <li>Eco-friendly and cost-effective products</li>
-                <li>Skills transfer and empowerment</li>
-                <li>Long-term community impact</li>
+                <li>Eco-friendly products</li>
+                <li>Skills transfer programs</li>
+                <li>Community empowerment</li>
             </ol>
 
             <div class="project-gallery">
-                <img src="img/reusable1.jpg" class="lightbox-img" alt="Reusable pad training">
+                <img src="img/reusable1.jpg" class="lightbox-img responsive-img" alt="Reusable pad training">
             </div>
         </section>
 
-        <!--Project 5-->
+        <!-- Project 5 -->
         <section class="project fade-in">
-            <h6>Future Projects</h6>
-
+            <h2>Future Projects</h2>
             <ul>
-                <li>Expanding our reach to rural schools across more provinces</li>
-                <li>Partnering with health professionals for reproductive health education</li>
-                <li>Developing mentorship programs for girls</li>
+                <li>Expand to rural provinces</li>
+                <li>Partner with health professionals</li>
+                <li>Mentorship for girls</li>
             </ul>
         </section>
 
     </main>
 
-    <!-- LIGHTBOX MODAL -->
+    <!-- Lightbox Modal -->
     <div id="lightboxModal" class="lightbox-modal">
         <span id="lightboxClose">&times;</span>
-        <img id="lightboxImg" class="lightbox-content">
+        <img id="lightboxImg" class="lightbox-content" alt="">
     </div>
 
 </body>
